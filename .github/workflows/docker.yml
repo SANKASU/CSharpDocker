@@ -26,6 +26,6 @@ jobs:
      
      - name: docker push
        run: |
-             docker push aimvector/nodejs:1.0.0 
+             docker push 1enterprisedevopshca/aimvector/nodejs:1.0.0 
    #     docker push aimvector/csharp:1.0.0
       
