@@ -1,10 +1,10 @@
-# name: Docker Series Builds
+ name: Docker Series Builds
 
 # #uncomment to enable push trigger
-# #on: [push]
+ #on: [push]
 
 # jobs:
-build:
+ build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -14,8 +14,8 @@ build:
 #         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}  
 #       run: |
 #         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-     - name: docker build csharp
-       run: |
+    - name: docker build csharp
+       run: | 
          docker build ./c# -t aimvector/csharp:1.0.0
 #     - name: docker build nodejs
 #       run: |
