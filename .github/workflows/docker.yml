@@ -23,6 +23,6 @@ jobs:
      
      - name: docker push
        run: |
-             docker push $DOCKER_HUB_REPO
+             docker push sureshhca/${{ secrets.DOCKER_HUB_REPO }}
    
       
