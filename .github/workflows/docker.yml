@@ -18,7 +18,7 @@ jobs:
 
      - name: docker build nodejs
        run: |
-         docker build ./nodejs -t aimvector/nodejs:1.0.0
+         docker build ./nodejs -t sureshhca/csharp_docker_img
      
     # - name: docker build csharp
     #   run: |
@@ -26,6 +26,6 @@ jobs:
      
      - name: docker push
        run: |
-             docker push 1enterprisedevopshca/aimvector/nodejs:1.0.0 
+             docker push sureshhca/csharp_docker_img 
    #     docker push aimvector/csharp:1.0.0
       
